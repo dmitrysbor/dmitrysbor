@@ -6,7 +6,8 @@ import requests
 
 class YaUploader:
     def __init__(self):
-        pass
+        # TODO: получение token по Client ID и Secret ID
+        self.token = token
 
     def create_folder(self, path, token):
         url_create = 'https://cloud-api.yandex.net/v1/disk/resources'
