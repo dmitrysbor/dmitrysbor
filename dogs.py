@@ -72,7 +72,6 @@ def test_proverka_upload_dog(breed):
         for item in items:
             assert item.get('type') == 'file'
             assert item.get('name').startswith(breed)
-
     else:
         assert len(items) == len(get_sub_breeds(breed)), f"{items},{get_sub_breeds(breed)}"
         for item in items:
